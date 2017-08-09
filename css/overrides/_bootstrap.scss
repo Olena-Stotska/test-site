@@ -1,0 +1,9 @@
+.btn {
+  &:focus,
+  &:active,
+  &:active:focus,
+  &.active,
+  &.active:focus {
+    outline: 0;
+  }
+}

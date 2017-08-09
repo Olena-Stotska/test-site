@@ -1,0 +1,40 @@
+/* cyrillic */
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Georgia'),
+       local('Georgia-Regular'),
+       url(../font/georgia.ttf) format('truetype');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Georgia'),
+       local('Georgia-Italic'),
+       url(../font/georgiai.ttf) format('truetype');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Georgia Bold'),
+       local('Georgia-Bold'),
+       url(../font/georgiab.ttf) format('truetype');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Georgia'),
+       local('Georgia-Bold'),
+       url(../font/georgiaz.ttf) format('truetype');
+}
+

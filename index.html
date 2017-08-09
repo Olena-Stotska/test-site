@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Design</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="img/png" href="img/bage.png">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+  <div id="boot-loader" class="loader">
+    <div class="loader-inner"></div>
+  </div>
+
+  <header id="main-header" class="header clearfix">
+    <div class="logo col-xs-2">
+      <a href="#"><img src="img/logo.png"></a>
+    </div>
+
+    <div class="navigation col-xs-8">
+      <nav id="center-menu" class="nav-bar-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <form class="search">
+        <input type="text" name="q" class="search-box" placeholder="Search..." autocomplete="off">
+        <button class="btn btn-search btn-no-shadow">
+          <i class="icon-search"></i>
+        </button>
+      </form>
+    </div>
+
+    <nav id="main-menu" class="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="drop-down-menu clearfix">
+      <button name="showSearch" data-menu="#main-menu" class="btn btn-search btn-show-search btn-no-shadow">
+        <i class="icon-search"></i>
+      </button>
+
+      <button id="btn-menu" class="btn btn-menu btn-no-shadow" name="showMenuOrCancel">
+        <div class="sw-topper"></div><!--
+        --><div class="sw-middle"></div><!--
+        --><div class="sw-footer"></div>
+      </button>
+    </div>
+  </header>
+
+  <div class="fullscreen">
+    <div class="content">
+      <div class="title-text">
+        <h1>Web Design</h1>
+        <p>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum , ut fermentum massa justo sit amet
+          erat a ante venenatis dapibus posuere velit
+        </p>
+      </div>
+
+      <div class="modal" id="static-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-toggle="dismiss">&times;</button>
+              <h3 class="modal-title">our mission</h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet
+                risus. Integer posuere erat a ante venenatis dapibus
+                posuere velit aliquet. Praesent commodo cursus magna,
+                vel scelerisque nisl consectetur et. Sed posuere consectetur
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-horizontally">
+        <span class="horizontally"><button class="btn btn-really">Really?</button></span>
+      </div>
+
+      <div class="section-vertically">
+        <span class="vertically"></span>
+        <span class="vertically"></span>
+      </div>
+
+      <div class="btn btn-play">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="box col-sm-6 col-md-3" data-toggle="modal" data-target="#static-modal">
+        <img class="img-responsive" src="img/img1.png" alt="Responsive image">
+
+        <div class="title-img">
+          <h3>Amet Condimentum</h3>
+          <p>Dolor</p>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+
+      <div class="box col-sm-6 col-md-3" data-toggle="modal" data-target="#static-modal">
+        <img class="img-responsive" src="img/img2.png" alt="Responsive image">
+
+        <div class="title-img">
+          <h3>Lorem Cursus</h3>
+          <p>Ligula</p>
+        </div>
+
+        <div class="overlay"></div>
+
+
+      </div>
+
+      <div class="box col-sm-6 col-md-3" data-toggle="modal" data-target="#static-modal">
+        <img class="img-responsive" src="img/img3.png" alt="Responsive image">
+
+        <div class="title-img">
+          <h3>Condimentum Ultricies</h3>
+          <p>Consectetur</p>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+
+      <div class="box col-sm-6 col-md-3" data-toggle="modal" data-target="#static-modal">
+        <img class="img-responsive" src="img/img4.png" alt="Responsive image">
+
+        <div class="title-img">
+          <h3>Ridiculus Ornare</h3>
+          <p>Ullamcorper</p>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-our">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <p class="title">folllow us</p>
+
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <p class="title">get to know us</p>
+
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Developers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <p class="title">get to know us</p>
+
+          <ul>
+            <li><a href="#">Detroit</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">Las Vegas</a></li>
+            <li><a href="#">California</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <p class="title">our mission</p>
+          <p class="text">
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet
+            risus. Integer posuere erat a ante venenatis dapibus
+            posuere velit aliquet. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur et. Sed posuere consectetur
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Copyright&copy2016@samillary</span>
+  </footer>
+
+  <script src="js/index.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.footer {
+  padding: 42px 0;
+  font-family: Georgia, sans-serif;
+  text-align: center;
+  color: map-get($colors, copyright);
+  background-color: map-get($colors, dark);
+
+  span {
+    font-size: 12px;
+    font-style: italic;
+  }
+}

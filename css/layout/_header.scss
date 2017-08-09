@@ -1,0 +1,147 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 10px 5.1% 2px 5.1%;
+  @include transition(all 0.3s);
+
+  &:after {
+    padding-top: 10px;
+    display: block;
+    content: '';
+    border-bottom: 1px solid map-get($colors, primary);
+  }
+}
+
+.navigation {
+  text-align: center;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.min-header {
+  background-color: rgba(216, 116, 112, 0.4);
+}
+
+.logo {
+  float: left;
+}
+
+.nav-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 -30px;
+  background-color: rgba(216, 116, 112, 0.7);
+  opacity: 0;
+  @include transform(translateY(-100%));
+  @include transition(opacity 1s, transform 0.5s);
+
+  a {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $font-secondary;
+    color: map-get($colors, primary);
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin-top: 60px;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.09);
+      @include transition(all 0.5s ease-out);
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 1.6rem;
+      display: block;
+      padding: 20px 0;
+      text-transform: uppercase;
+      color: map-get($colors, primary);
+      @include transition(all 0.5s ease-out);
+
+      &:hover {
+        color: map-get($colors, secondary);
+      }
+    }
+  }
+}
+
+.visible {
+  opacity: 1;
+  @include transform(translateY(0));
+}
+
+.nav-bar-menu {
+  display: none;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      padding: 0 20px;
+      color: map-get($colors, primary);
+      font-family: $font-secondary;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 10px;
+      opacity: 1;
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.7;
+        @include transition(opacity 0.5s);
+      }
+    }
+  }
+}
+
+@media(min-width: #{map-get($breakpoints, small)}) {
+
+  .header {
+    padding: 39px 5.1%;
+
+    &:after {
+      padding-top: 39px;
+    }
+  }
+
+  .logo {
+    margin-right: 20px;
+  }
+
+  .min-header {
+    padding: 10px 5.1% 2px 5.1%;
+
+    &:after {
+      padding-top: 10px;
+    }
+  }
+}
+
+@media(min-width: #{map-get($breakpoints, large)}) {
+
+  #center-menu {
+    display: block;
+    margin-top: 10px;
+  }
+}

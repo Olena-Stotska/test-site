@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-primary;
+  height: 100%;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
