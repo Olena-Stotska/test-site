@@ -1,4 +1,4 @@
-.about-our {
+.about-us {
   text-align: center;
   padding: 58px 30px;
   font-family: Georgia, sans-serif;
@@ -37,14 +37,14 @@
 
 @media(min-width: #{map-get($breakpoints, small)}) {
 
-  .about-our {
+  .about-us {
     text-align: left;
   }
 }
 
 @media(min-width: #{map-get($breakpoints, large)}) {
 
-  .about-our {
+  .about-us {
     padding: 116px 196px;
   }
 }
