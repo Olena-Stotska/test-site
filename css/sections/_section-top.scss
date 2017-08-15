@@ -13,6 +13,7 @@
   top: 15%;
   left: 0;
   right: 0;
+  bottom: 0;
   text-align: center;
 
   .title-text {
@@ -72,18 +73,19 @@
 
 .section-vertically {
   padding-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  height: 30%;
 }
 
 .vertically {
   margin: 0 2px;
-  height: 100px;
+  height: 100%;
   display: inline-block;
   margin: 0 auto;
   width: 1px;
   background-color: map-get($colors, navbar-btn);
 
-  &:nth-child(1) {
+  &:first-child {
     margin-bottom: 20px;
   }
 }
@@ -140,12 +142,8 @@
   }
 
   .section-vertically {
-    padding-top: 68px;
+    padding-top: 58px;
     margin-bottom: 32px;
-  }
-
-  .vertically {
-    height: 192px;
   }
 }
 
